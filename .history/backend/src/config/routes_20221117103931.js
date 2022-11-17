@@ -1,5 +1,5 @@
 const express = require('express')
-//const todo = require('../api/todo/todoServices')
+const todo = require('../api/todo/todoServices')
 
 module.exports = function(server){
 
@@ -9,6 +9,6 @@ module.exports = function(server){
 
     //TODO Routes
     const todoService = require('../api/todo/todoServices')
-    todoService.register(router, '/todos')
+    todoService.register(router, '/todo')
 
 }
