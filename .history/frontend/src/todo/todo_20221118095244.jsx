@@ -12,7 +12,7 @@ export default class Todo extends Component{
     }
 
     handleAdd(){
-        console.log(this)
+        console.log('Add')
     }
 
     render(){

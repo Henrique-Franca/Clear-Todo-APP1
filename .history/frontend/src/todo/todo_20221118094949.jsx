@@ -6,13 +6,8 @@ import TodoList from "./todoList";
 
 export default class Todo extends Component{
 
-    constructor(props){
-        super(props)
-        this.handleAdd = this.handleAdd.bind(this)
-    }
-
     handleAdd(){
-        console.log(this)
+        console.log('Add')
     }
 
     render(){
