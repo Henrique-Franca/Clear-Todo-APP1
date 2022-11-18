@@ -12,7 +12,10 @@ export default props =>(
         </Grid>
 
         <Grid cols='12 3 2'>
-            <IconButton style='primary' icon='plus'></IconButton>
+        
+            <button className="btn btn-primary">
+                <i className="fa fa-plus"></i>
+            </button>
         </Grid>
     </div>
 
