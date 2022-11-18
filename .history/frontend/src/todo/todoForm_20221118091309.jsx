@@ -8,11 +8,7 @@ export default props =>(
                 placeholder="Adicione uma tarefa" />
         </div>
 
-        <div className="col-xs-12 col-sm-3 col-md-2">
-            <button className="btn btn-primary">
-                <i className="fa fa-plus"></i>
-            </button>
-        </div>
+        <div className="col-xs-12 col-sm-3 col-md-2"></div>
     </div>
 
 )

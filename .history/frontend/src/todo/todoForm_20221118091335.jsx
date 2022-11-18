@@ -9,9 +9,7 @@ export default props =>(
         </div>
 
         <div className="col-xs-12 col-sm-3 col-md-2">
-            <button className="btn btn-primary">
-                <i className="fa fa-plus"></i>
-            </button>
+            <button className="btn btn-primary"></button>
         </div>
     </div>
 
