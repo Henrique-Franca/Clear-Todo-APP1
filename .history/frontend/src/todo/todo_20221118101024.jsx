@@ -20,7 +20,7 @@ export default class Todo extends Component{
     }
 
     handleAdd(){
-        console.log(this.state.description)
+        
     }
 
     render(){

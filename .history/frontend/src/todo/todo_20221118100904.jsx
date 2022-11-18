@@ -11,8 +11,6 @@ export default class Todo extends Component{
         this.state = {description: '', list:[]}
 
         this.handleAdd = this.handleAdd.bind(this)
-        this.handleChange = this.handleChange.bind(this)
-
     }
 
     handleChange(e){
@@ -20,7 +18,7 @@ export default class Todo extends Component{
     }
 
     handleAdd(){
-        console.log(this.state.description)
+        
     }
 
     render(){
