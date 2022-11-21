@@ -5,7 +5,6 @@ import PageHeader from "../template/pageHeader";
 import TodoForm from "./todoForm";
 import TodoList from "./todoList";
 
-const URL = 'http://localhost:3003/api/todos'
 
 export default class Todo extends Component{
 
@@ -23,9 +22,7 @@ export default class Todo extends Component{
     }
 
     handleAdd(){
-        const description = this.state.description
-        axios.post(URL, {description})
-            .then(resp => console.log('Funciona!'))
+        console.log(this.state.description)
     }
 
     render(){
