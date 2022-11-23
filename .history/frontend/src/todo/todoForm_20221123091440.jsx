@@ -31,7 +31,7 @@ class TodoForm extends Component{
                     <input id='description' className='form-control'
                         placeholder='Adicione uma tarefa'
                         onChange={this.props.changeDescription}
-                        onKeyUp={this.keyHandler}
+                        onKeyUp={keyHandler}
                         value={this.props.description}></input>
                 </Grid>
                 <Grid cols='12 3 2'>

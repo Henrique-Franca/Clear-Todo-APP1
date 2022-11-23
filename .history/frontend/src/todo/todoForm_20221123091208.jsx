@@ -11,11 +11,6 @@ class TodoForm extends Component{
         super(props)
         this.keyHandler = this.keyHandler.bind(this)
     }
-
-    componentWillUnmount(){
-        this.props.search()
-    }
-
     keyHandler(e){
         if (e.key === 'Enter') {
             e.shiftKey ? this.props.handleSearch() : this.props.handleAdd()
@@ -30,17 +25,17 @@ class TodoForm extends Component{
                 <Grid cols='12 9 10'>
                     <input id='description' className='form-control'
                         placeholder='Adicione uma tarefa'
-                        onChange={this.props.changeDescription}
-                        onKeyUp={this.keyHandler}
-                        value={this.props.description}></input>
+                        onChange={props.changeDescription}
+                        onKeyUp={keyHandler}
+                        value={props.description}></input>
                 </Grid>
                 <Grid cols='12 3 2'>
                     <IconButton style='primary' icon='plus'
-                        onClick={this.props.handleAdd}></IconButton>
+                        onClick={props.handleAdd}></IconButton>
                     <IconButton style='info' icon='search'
-                        onClick={this.props.handleSearch}></IconButton>
+                        onClick={props.handleSearch}></IconButton>
                     <IconButton style='default' icon='close'
-                        onClick={this.props.handleClear}></IconButton>
+                        onClick={props.handleClear}></IconButton>
                 </Grid>
             </div>
         )

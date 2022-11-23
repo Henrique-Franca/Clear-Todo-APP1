@@ -20,7 +20,7 @@ class TodoForm extends Component{
         if (e.key === 'Enter') {
             e.shiftKey ? this.props.handleSearch() : this.props.handleAdd()
         } else if (e.key === 'Escape') {
-            props.handleClear()
+            this.props.handleClear()
         }
     }
 
