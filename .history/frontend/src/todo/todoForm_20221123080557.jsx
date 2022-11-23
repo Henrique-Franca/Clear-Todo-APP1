@@ -35,4 +35,4 @@ const TodoForm = props => {
 }
 
 const mapStateToProps = state =>({description: state.todo.description})
-export default connect(mapStateToProps)(TodoForm)
+export default TodoForm
