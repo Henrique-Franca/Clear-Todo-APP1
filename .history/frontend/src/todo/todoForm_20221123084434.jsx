@@ -20,7 +20,7 @@ const TodoForm = props => {
             <Grid cols='12 9 10'>
                 <input id='description' className='form-control'
                     placeholder='Adicione uma tarefa'
-                    onChange={props.changeDescription}
+                    onChange={props.handleChange}
                     onKeyUp={keyHandler}
                     value={props.description}></input>
             </Grid>
@@ -36,7 +36,7 @@ const TodoForm = props => {
     )
 }
 
-const mapStateToProps = state => ({description: state.todo.description})
-const mapDispatchToProps = dispatch => 
+const mapStateToProps = state =>({description: state.todo.description})
+const mapDispatcToProps = dispatch => 
     bindActionCreators({changeDescription}, dispatch)
-export default connect(mapStateToProps, mapDispatchToProps)(TodoForm)
+export default connect(mapStateToProps, mapDispatcToProps)(TodoForm)
