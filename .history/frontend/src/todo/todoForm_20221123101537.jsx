@@ -12,7 +12,7 @@ class TodoForm extends Component{
         this.keyHandler = this.keyHandler.bind(this)
     }
 
-    componentWillMount() {
+    useLayoutEffect() {
         this.props.search()
     }
 

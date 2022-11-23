@@ -12,7 +12,7 @@ class TodoForm extends Component{
         this.keyHandler = this.keyHandler.bind(this)
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.props.search()
     }
 
