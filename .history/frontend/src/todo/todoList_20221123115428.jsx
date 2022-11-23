@@ -17,7 +17,7 @@ const TodoList = props => {
                         onClick={() => props.markAsDone(todo)}>
                         </IconButton>
                     <IconButton style='warning' icon='undo' hide={!todo.done}
-                        onClick={() => props.markAsPending(todo)}>
+                        onClick={() => props.markAsPeding(todo)}>
                         </IconButton>
                     <IconButton style='danger' icon='trash-o' hide={!todo.done}
                         onClick={() => props.handleRemove(todo)}>
