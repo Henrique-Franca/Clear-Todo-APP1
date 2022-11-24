@@ -16,7 +16,10 @@ export const search = () =>{
     }
 
    
-
+    return{
+        type: 'TODO_SEARCHED',
+        payload: request
+    }
 }
 
 export const add = (description) => {
@@ -49,5 +52,5 @@ export const remove = (todo) =>{
 }
 
 export const clear = () =>{
-    return [{type: 'TODO_CLEAR' },search()]
+    return {type: 'TODO_CLEAR' }
 }

@@ -42,8 +42,7 @@ class TodoForm extends Component{
                     <IconButton style='primary' icon='plus'
                         onClick={() => add(description)}></IconButton>
                     <IconButton style='info' icon='search'
-                        // como não recebe mais parametro pode ser chamado fora de uma função
-                        onClick={search}></IconButton>
+                        onClick={() => search()}></IconButton>
                     <IconButton style='default' icon='close'
                         onClick={this.props.clear}></IconButton>
                 </Grid>
